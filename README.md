@@ -1,5 +1,5 @@
 # DT173GM5_BACKEND
-http://studenterutv.miun.se/~crlo1900/
+http://studenter.miun.se/~crlo1900/DT173G/public/
 ```
 DELETE:
     const data = { code: <some value>}
