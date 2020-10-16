@@ -15,9 +15,28 @@ DELETE:
         })
         
 POST:
-        var x = document.getElementById("courseAdd");
         const data = {
             code: <some value>,
+            course_name: <some value>,
+            syllabus: <some value>,
+            progression: <some value>
+        }
+        fetch('http://localhost:8080/RestwebbtjM5/API/rest.php', {
+            method: 'POST',
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                
+            })
+            .catch(error => {
+                console.log('Error: ', error);
+            })
+            
+PUT:
+        const data = {
+            code: <some value>,
+            newCode: <some value>,
             course_name: <some value>,
             syllabus: <some value>,
             progression: <some value>
