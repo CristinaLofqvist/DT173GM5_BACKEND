@@ -1,5 +1,5 @@
 # DT173GM5_BACKEND
-
+```
 DELETE:
     const data = { code: <some value>}
     fetch('http://localhost:8080/RestwebbtjM5/API/rest.php', {
@@ -43,3 +43,4 @@ POST:
             .catch(error => {
                 console.log('Error: ', error);
             })
+```
