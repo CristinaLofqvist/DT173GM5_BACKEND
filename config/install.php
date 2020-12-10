@@ -10,10 +10,10 @@ $db=new mysqli(DBHOST,DBUSER,DBPASS,DBDATABASE);
 
     $sql="DROP TABLE IF EXISTS courses;";
     $sql.="CREATE TABLE courses(
-        code VARCHAR(15) PRIMARY KEY, 
-        course_name VARCHAR(57) NOT NULL, 
+        code INT(15)PRIMARY KEY AUTO_INCREMENT, 
+        course_name VARCHAR(57)NOT NULL, 
         syllabus TEXT NOT NULL,
-        progression VARCHAR (10) NOT NULL
+        progression VARCHAR (10)NOT NULL
         );";
         if($devMode) {
             echo "<pre>$sql<pre>";

@@ -12,9 +12,9 @@ require('CourseHandler.php');
 /* Headers to make webbservice available from all domains*/
 
 header('Content-Type: application/json'); //this is a webbservice that sends and recieves data in JSON format
-header('Access_Control-Allow-Origin: *'); // allows all domains to access this webbserver
+header('Access-Control-Allow-Origin: *'); // allows all domains to access this webbserver
 header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE'); // actively allowing methods delete and put
-header('Access-Controll-Allow-Headers: Acess-Control_Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization, X-Requested-With');
+header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
 $method = $_SERVER['REQUEST_METHOD']; /*För variablen input och delete finns 
 ingen färdig metod därför görs att: I variablen method lagras 
@@ -29,13 +29,13 @@ switch ($method) {
 
         /*Control if result contains any rows*/
         if (sizeof($courses) > 0) {
-            http_response_code(200); //ok
+          http_response_code(200); //ok
             $result = [];
             for ($i = 0; $i < count($courses); $i++) {
                 array_push($result, $courses[$i]->getCourse());
             }
         } else {
-            http_response_code(404); //Not found
+           http_response_code(404); //Not found
             $result = array("message" => "No courses found");
         }
         break;

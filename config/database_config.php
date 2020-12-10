@@ -14,9 +14,9 @@
         define ("DBDATABASE","DT173GMoment5");
     } else {
         /*DB settings (miunserver) */
-        define ("DBHOST","studentmysql.miun.se");
-        define ("DBUSER","crlo1900");
-        define ("DBPASS","glw52zrb");
-        define ("DBDATABASE","crlo1900");
+        define ("DBHOST","localhost");
+        define ("DBUSER","uhlbzpyg_dt173g");
+        define ("DBPASS","~Z(8_}N0wB44");
+        define ("DBDATABASE","uhlbzpyg_dt173g");
     }
 ?>
