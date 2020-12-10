@@ -1,5 +1,5 @@
 # DT173GM5_BACKEND
-http://studenter.miun.se/~crlo1900/DT173G/public/
+http://willbur.nu/dt173g/API/rest.php
 ```
 DELETE:
     const data = { code: <some value>}
